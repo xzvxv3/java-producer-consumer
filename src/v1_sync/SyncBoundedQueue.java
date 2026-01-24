@@ -2,7 +2,6 @@ package v1_sync;
 
 import common.BoundedQueue;
 import common.Order;
-
 import java.util.ArrayDeque;
 import java.util.Queue;
 

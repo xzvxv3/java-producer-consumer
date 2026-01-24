@@ -2,11 +2,8 @@ package v1_sync;
 
 import common.BoundedQueue;
 import common.Order;
-
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 import java.util.Random;
 
 import static common.Logger.log;
@@ -17,11 +14,10 @@ public class SyncMain {
     private static final String[] menus = {"치킨", "피자", "햄버거", "떡볶이", "초밥", "파스타", "돈까스", "쌀국수", "짜장면", "삼겹살"};
 
     public static void main(String[] args) {
-
         BoundedQueue queue = new SyncBoundedQueue(2);
 
-        producerFirst(queue);
-        // consumerFirst(queue);
+        // producerFirst(queue);
+        consumerFirst(queue);
     }
 
     private static void consumerFirst(BoundedQueue queue) {

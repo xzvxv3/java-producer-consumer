@@ -3,10 +3,10 @@
 패키지 구조
 ```
 src
-├── common (공통)        // BoundedQueue(인터페이스), Order(데이터), Logger, ThreadUtil
-├── v1_sync (기초)      // synchronized 사용 (wait / notify)
-├── v2_lock (개선)      // ReentrantLock 사용 (await / signal)
-└── v3_juc (표준)       // BlockingQueue API 사용
+├── common        // BoundedQueue(인터페이스), Order(데이터), Logger, ThreadUtil
+├── v1_sync       // synchronized 사용 (wait / notify)
+├── v2_lock       // ReentrantLock 사용 (await / signal)
+└── v3_juc        // BlockingQueue API 사용
 ```
 
 ---
